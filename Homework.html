@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Homework
+        </title>
+    </head>
+    <body>
+        <p id="message error"> </p>
+        <p>
+            Lunch is at 1:00pm <br>
+            Dinner is at 7:00pm <br>
+            Breakfast is at 7:00am <br>
+            Check outs can be made on our website. 
+        </p>
+
+        <script>
+            try {
+                addalert("New here? This is all the informtion you need to know.");
+            }
+            catch(err) {
+                document.getElementById("message error").innerHTML = err.message;
+            }
+        </script>
+    </body>
